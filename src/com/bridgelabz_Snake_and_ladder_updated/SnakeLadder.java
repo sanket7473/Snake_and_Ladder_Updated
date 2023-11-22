@@ -28,12 +28,12 @@ public class SnakeLadder {
             //Dicecheck will matches the 0 1 2 values which is assign to ladder snake and No play
             switch (DiceCheck) {
 //
-                case Is_Ladder:
+                case Is_Snake:
                     System.out.println(" player_1 value is " + player1_position);
                     player1_position = player1_position - RollsDie; //Move the player forward by a random number 1-6 if ladder
                     System.out.println("Snake value is " + RollsDie + " Player position moved to " + player1_position);
                     break;
-                case Is_Snake:
+                case Is_Ladder:
                     player1_position = player1_position + RollsDie; //Move the player forward by a random number 1-6 if ladder
                     System.out.println("ladder value is " + RollsDie + " Player position moved to " + player1_position);
                     break;
